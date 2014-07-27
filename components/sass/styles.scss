@@ -1,5 +1,6 @@
 @import "compass";
 @import "jeet/index";
+@import "modular-scale";
 
 @import "variables";
 @import "mixins";
@@ -7,8 +8,4 @@
 @import "layout";
 @import "modules";
 
-@include edit;
-
-section {
-	@include center(1200px);
-}
+// @include edit;

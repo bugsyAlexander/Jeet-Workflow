@@ -11,6 +11,7 @@
     @include shift($ratios: 0, $col_or_span: column);
     @include unshift;
 */
+@import url("http://fonts.googleapis.com/css?family=Abel|Fjalla+One");
 /* line 13, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_reset.scss */
 article,
 aside,
@@ -578,13 +579,71 @@ pre {
     margin-top: -1.875px;
   }
 }
-/* line 3, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
-* {
-  background: #eee;
-  background: rgba(0, 0, 0, 0.05);
+/* line 3, ../components/sass/_base.scss */
+html {
+  -webkit-font-smoothing: antialiased;
 }
 
-/* line 12, ../components/sass/styles.scss */
+/* line 7, ../components/sass/_base.scss */
+body {
+  font-family: Fjalla One, sans-serif;
+  font-size: 1em;
+  color: #262741;
+  line-height: 1.61803em;
+}
+
+/* line 14, ../components/sass/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Fjalla One, sans-serif;
+  color: #262741;
+  margin-bottom: .4rem;
+  padding-top: .5rem;
+  letter-spacing: 1px;
+  text-shadow: #cccccc 1px 1px;
+}
+
+/* line 23, ../components/sass/_base.scss */
+h5 {
+  font-size: 1.33em;
+}
+
+/* line 24, ../components/sass/_base.scss */
+h4 {
+  font-size: 1.61803em;
+}
+
+/* line 25, ../components/sass/_base.scss */
+h3 {
+  font-size: 2.15199em;
+}
+
+/* line 26, ../components/sass/_base.scss */
+h2 {
+  font-size: 2.61803em;
+}
+
+/* line 27, ../components/sass/_base.scss */
+h1 {
+  font-size: 3.48199em;
+}
+
+/* line 29, ../components/sass/_base.scss */
+a {
+  color: #f04b47;
+  text-decoration: none;
+}
+/* line 32, ../components/sass/_base.scss */
+a:hover {
+  color: #a49f79;
+  text-decoration: underline;
+}
+
+/* line 38, ../components/sass/_base.scss */
+p {
+  color: #666;
+}
+
+/* line 1, ../components/sass/_layout.scss */
 section {
   *zoom: 1;
   width: auto;
@@ -595,6 +654,7 @@ section {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
+  padding: 16px;
 }
 /* line 89, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
 section:before, section:after {

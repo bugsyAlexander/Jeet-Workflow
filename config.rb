@@ -1,4 +1,5 @@
 require 'jeet'
+require 'modular-scale'
 
 css_dir = 'css/'
 sass_dir = 'components/sass/'
