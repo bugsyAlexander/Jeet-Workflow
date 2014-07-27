@@ -665,3 +665,184 @@ section:before, section:after {
 section:after {
   clear: both;
 }
+
+@media (min-width: 320px) {
+  /* line 9, ../components/sass/_layout.scss */
+  section {
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+
+  /* line 12, ../components/sass/_layout.scss */
+  h1, p, article, aside {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  /* line 31, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
+  h1:first-child, p:first-child, article:first-child, aside:first-child {
+    margin-left: auto;
+  }
+  /* line 34, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
+  h1:last-child, p:last-child, article:last-child, aside:last-child {
+    margin-right: auto;
+  }
+  /* line 14, ../components/sass/_layout.scss */
+  h1 p, p p, article p, aside p {
+    text-align: left;
+  }
+}
+@media (min-width: 700px) {
+  /* line 21, ../components/sass/_layout.scss */
+  section {
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+
+  /* line 24, ../components/sass/_layout.scss */
+  article {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 65.66667%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 89, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
+  article:before, article:after {
+    content: '';
+    display: table;
+  }
+  /* line 93, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
+  article:after {
+    clear: both;
+  }
+  /* line 42, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_grid.scss */
+  article:last-child {
+    margin-right: 0%;
+  }
+
+  /* line 27, ../components/sass/_layout.scss */
+  aside {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 31.33333%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 89, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
+  aside:before, aside:after {
+    content: '';
+    display: table;
+  }
+  /* line 93, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
+  aside:after {
+    clear: both;
+  }
+  /* line 42, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_grid.scss */
+  aside:last-child {
+    margin-right: 0%;
+  }
+
+  /* line 30, ../components/sass/_layout.scss */
+  h1, p, article, aside {
+    display: inline;
+    clear: none;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+  /* line 57, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
+  h1:first-child, p:first-child, article:first-child, aside:first-child {
+    margin-left: 0;
+  }
+  /* line 60, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
+  h1:last-child, p:last-child, article:last-child, aside:last-child {
+    margin-right: 0;
+  }
+  /* line 32, ../components/sass/_layout.scss */
+  h1 p, p p, article p, aside p {
+    text-align: left;
+  }
+}
+@media (min-width: 960px) {
+  /* line 39, ../components/sass/_layout.scss */
+  section {
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+
+  /* line 43, ../components/sass/_layout.scss */
+  article p {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 89, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
+  article p:before, article p:after {
+    content: '';
+    display: table;
+  }
+  /* line 93, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
+  article p:after {
+    clear: both;
+  }
+  /* line 42, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_grid.scss */
+  article p:last-child {
+    margin-right: 0%;
+  }
+
+  /* line 48, ../components/sass/_layout.scss */
+  aside p {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 39.91667%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 89, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
+  aside p:before, aside p:after {
+    content: '';
+    display: table;
+  }
+  /* line 93, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
+  aside p:after {
+    clear: both;
+  }
+  /* line 42, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_grid.scss */
+  aside p:last-child {
+    margin-right: 0%;
+  }
+}

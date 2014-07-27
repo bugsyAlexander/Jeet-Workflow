@@ -2,3 +2,51 @@ section {
 	@include center(1200px);
 	padding: 16px;
 }
+
+// testing breakpoints
+
+@include breakpoint(320px) {
+    section {
+        @include single-transition(all, 1s, ease-out);
+    }
+    h1, p, article, aside {
+        @include stack();
+        p {
+            text-align: left;
+        }
+    }
+}
+
+@include breakpoint(700px) {
+    section {
+        @include single-transition(all, 1s, ease-out);
+    }
+    article {
+        @include col(2/3);
+    }
+    aside {
+         @include col(1/3);
+    }
+    h1, p, article, aside {
+        @include unstack();
+        p {
+            text-align: left;
+        }
+    }
+}
+
+@include breakpoint(960px) {
+    section {
+        @include single-transition(all, 1s, ease-out);
+    }
+    article {
+        p {
+            @include col(1/2);
+        }
+    }
+    aside {
+        p {
+            @include col(5/12);
+        }
+    }
+}
