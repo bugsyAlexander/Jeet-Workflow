@@ -1,0 +1,8 @@
+@import 'compass';
+@import 'jeet/index';
+
+@include edit;
+
+section {
+	@include center(1200px);
+}
