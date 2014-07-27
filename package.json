@@ -2,6 +2,7 @@
   "name": "jeet-workflow",
   "author": "Mynor Bugsy Alexander",
   "version": "0.0.1",
+  "github" : "https://github.com/bugsyAlexander/Jeet-Workflow.git",
   "description": "Jeet workflow using grunt, sass, modular-scale, compass, breakpoint, and git",
   "keywords": [
     "jeet",
