@@ -1,52 +1,98 @@
-section {
-	@include center(1200px);
-	padding: 16px;
+.wrapper {
+    @include center(1200px);
 }
 
-// testing breakpoints
+section {
+	@include center(960px);
+    padding: 15px;
+}
 
+// breakpoints SMALL ===
 @include breakpoint(320px) {
     section {
         @include single-transition(all, 1s, ease-out);
-    }
+    } // section 
     h1, p, article, aside {
         @include stack();
         p {
             text-align: left;
-        }
-    }
-}
+        } // p
+    } // h1, p, etc
+    header a {
+        @include stack();
+        height: 44px;
+        padding: 10px 0;
+    } // header logo
+    nav {
+        @include stack();
+    } // nav a
 
+    .active {
+        border-bottom: none;
+    } // active
+} // breakpoint
+// ====================
+
+
+
+// breakpoints MEDIUM ===
 @include breakpoint(700px) {
     section {
         @include single-transition(all, 1s, ease-out);
-    }
+    } // section
     article {
         @include col(2/3);
-    }
+    } // article 
     aside {
          @include col(1/3);
-    }
+    } // aside
     h1, p, article, aside {
         @include unstack();
         p {
             text-align: left;
-        }
-    }
-}
+        } // h1, p, etc
+    } // p
 
+    // site nav
+    header {
+      text-align: center;
+      @include cf();
+      overflow: hidden;
+        a {
+            @include col(1/6);
+            padding: 10px;
+            height: 54px;
+      } // header
+    } // a
+
+    nav {
+        @include col(3/6, 2/6);
+        a {
+          @include span(1/5);
+        } // a
+    } // nav
+    .active {
+        border-bottom: none;
+    } // .active
+
+} // break point
+// ====================
+
+
+// breakpoints LARGE ===
 @include breakpoint(960px) {
     section {
         @include single-transition(all, 1s, ease-out);
-    }
+    } // section 
     article {
         p {
             @include col(1/2);
-        }
-    }
+        } // p
+    } // article 
     aside {
         p {
             @include col(5/12);
-        }
-    }
-}
+        } // p
+    } // aside
+} // breakpoint
+// ====================

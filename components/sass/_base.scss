@@ -26,6 +26,25 @@ h3{ font-size: ms(3); }
 h2{ font-size: ms(4); }
 h1{ font-size: ms(5); }
 
+div{
+    background: #fff;
+    border-bottom: 2px solid #ecf0f1;
+}
+
+header a {
+    letter-spacing: 1px;
+    color: $primary-color;
+    text-transform: uppercase;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.active, .logo {
+    color: $white;
+    background: $primary-color;
+}
+
 a {
 	color: $brand-orange;
     text-decoration: none;
