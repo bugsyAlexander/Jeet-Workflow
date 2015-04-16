@@ -584,7 +584,15 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 7, ../components/sass/_base.scss */
+/* apply a natural box layout model to all elements */
+/* line 8, ../components/sass/_base.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 12, ../components/sass/_base.scss */
 body {
   font-family: Fjalla One, sans-serif;
   font-size: 1em;
@@ -592,7 +600,7 @@ body {
   line-height: 1.61803em;
 }
 
-/* line 14, ../components/sass/_base.scss */
+/* line 19, ../components/sass/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: Fjalla One, sans-serif;
   color: #2e2d2c;
@@ -602,93 +610,183 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: #cccccc 1px 1px;
 }
 
-/* line 23, ../components/sass/_base.scss */
+/* line 28, ../components/sass/_base.scss */
 h5 {
   font-size: 1.33em;
 }
 
-/* line 24, ../components/sass/_base.scss */
+/* line 29, ../components/sass/_base.scss */
 h4 {
   font-size: 1.61803em;
 }
 
-/* line 25, ../components/sass/_base.scss */
+/* line 30, ../components/sass/_base.scss */
 h3 {
   font-size: 2.15199em;
 }
 
-/* line 26, ../components/sass/_base.scss */
+/* line 31, ../components/sass/_base.scss */
 h2 {
   font-size: 2.61803em;
 }
 
-/* line 27, ../components/sass/_base.scss */
+/* line 32, ../components/sass/_base.scss */
 h1 {
   font-size: 3.48199em;
 }
 
-/* line 29, ../components/sass/_base.scss */
-div {
-  background: #fff;
-  border-bottom: 2px solid #ecf0f1;
-}
-
-/* line 34, ../components/sass/_base.scss */
-header a {
-  letter-spacing: 1px;
-  color: #2e2d2c;
-  text-transform: uppercase;
-}
-/* line 38, ../components/sass/_base.scss */
-header a:hover {
-  text-decoration: none;
-}
-
-/* line 43, ../components/sass/_base.scss */
-.active, .logo {
-  color: white;
-  background: #2e2d2c;
-}
-
-/* line 48, ../components/sass/_base.scss */
+/* line 35, ../components/sass/_base.scss */
 a {
   color: #f04b47;
   text-decoration: none;
 }
-/* line 51, ../components/sass/_base.scss */
+/* line 38, ../components/sass/_base.scss */
 a:hover {
-  color: #a49f79;
-  text-decoration: underline;
+  color: #2e2d2c;
 }
 
-/* line 57, ../components/sass/_base.scss */
+/* line 43, ../components/sass/_base.scss */
 p {
   color: #666;
 }
 
-/* line 1, ../components/sass/_layout.scss */
-.wrapper {
+/* line 3, ../components/sass/_layout.scss */
+.logo {
   *zoom: 1;
-  width: auto;
-  max-width: 1200px;
-  float: none;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
   padding-left: 0;
   padding-right: 0;
+  width: 22.75%;
+  margin-left: 0%;
+  margin-right: 3%;
+  height: 60px;
+  padding: .75rem 0 0 1rem;
 }
 /* line 89, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
-.wrapper:before, .wrapper:after {
+.logo:before, .logo:after {
   content: '';
   display: table;
 }
 /* line 93, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
-.wrapper:after {
+.logo:after {
+  clear: both;
+}
+/* line 42, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_grid.scss */
+.logo:last-child {
+  margin-right: 0%;
+}
+
+/* line 9, ../components/sass/_layout.scss */
+.navBar {
+  width: 100%;
+  height: 60px;
+}
+
+/* line 14, ../components/sass/_layout.scss */
+section.navWrapper {
+  *zoom: 1;
+  width: auto;
+  max-width: 100%;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+/* line 89, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
+section.navWrapper:before, section.navWrapper:after {
+  content: '';
+  display: table;
+}
+/* line 93, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
+section.navWrapper:after {
   clear: both;
 }
 
-/* line 5, ../components/sass/_layout.scss */
+/* line 18, ../components/sass/_layout.scss */
+nav {
+  *zoom: 1;
+  width: auto;
+  max-width: 90%;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 48.5%;
+  margin-left: 25.75%;
+  margin-right: 3%;
+  height: inherit;
+}
+/* line 89, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
+nav:before, nav:after {
+  content: '';
+  display: table;
+}
+/* line 93, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
+nav:after {
+  clear: both;
+}
+/* line 89, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
+nav:before, nav:after {
+  content: '';
+  display: table;
+}
+/* line 93, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
+nav:after {
+  clear: both;
+}
+/* line 42, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_grid.scss */
+nav:last-child {
+  margin-right: 0%;
+}
+/* line 23, ../components/sass/_layout.scss */
+nav a {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: inherit;
+  width: 25%;
+  margin-left: 0%;
+  margin-right: 0%;
+  height: 60px;
+  padding-top: .75rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  font-size: .9rem;
+}
+/* line 89, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
+nav a:before, nav a:after {
+  content: '';
+  display: table;
+}
+/* line 93, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
+nav a:after {
+  clear: both;
+}
+
+/* line 34, ../components/sass/_layout.scss */
+section > header {
+  margin-top: 2rem;
+}
+
+/* line 38, ../components/sass/_layout.scss */
 section {
   *zoom: 1;
   width: auto;
@@ -697,9 +795,8 @@ section {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 0;
-  padding-right: 0;
-  padding: 15px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 /* line 89, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
 section:before, section:after {
@@ -712,7 +809,7 @@ section:after {
 }
 
 @media (min-width: 320px) {
-  /* line 12, ../components/sass/_layout.scss */
+  /* line 44, ../components/sass/_layout.scss */
   section {
     -webkit-transition: all 1s ease-out;
     -moz-transition: all 1s ease-out;
@@ -720,7 +817,7 @@ section:after {
     transition: all 1s ease-out;
   }
 
-  /* line 15, ../components/sass/_layout.scss */
+  /* line 48, ../components/sass/_layout.scss */
   h1, p, article, aside {
     display: block;
     clear: both;
@@ -738,58 +835,13 @@ section:after {
   h1:last-child, p:last-child, article:last-child, aside:last-child {
     margin-right: auto;
   }
-  /* line 17, ../components/sass/_layout.scss */
+  /* line 50, ../components/sass/_layout.scss */
   h1 p, p p, article p, aside p {
     text-align: left;
   }
-
-  /* line 21, ../components/sass/_layout.scss */
-  header a {
-    display: block;
-    clear: both;
-    float: none;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    height: 44px;
-    padding: 10px 0;
-  }
-  /* line 31, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
-  header a:first-child {
-    margin-left: auto;
-  }
-  /* line 34, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
-  header a:last-child {
-    margin-right: auto;
-  }
-
-  /* line 26, ../components/sass/_layout.scss */
-  nav {
-    display: block;
-    clear: both;
-    float: none;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-  /* line 31, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
-  nav:first-child {
-    margin-left: auto;
-  }
-  /* line 34, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
-  nav:last-child {
-    margin-right: auto;
-  }
-
-  /* line 30, ../components/sass/_layout.scss */
-  .active {
-    border-bottom: none;
-  }
 }
 @media (min-width: 700px) {
-  /* line 40, ../components/sass/_layout.scss */
+  /* line 65, ../components/sass/_layout.scss */
   section {
     -webkit-transition: all 1s ease-out;
     -moz-transition: all 1s ease-out;
@@ -797,7 +849,7 @@ section:after {
     transition: all 1s ease-out;
   }
 
-  /* line 43, ../components/sass/_layout.scss */
+  /* line 69, ../components/sass/_layout.scss */
   article {
     *zoom: 1;
     float: left;
@@ -824,7 +876,7 @@ section:after {
     margin-right: 0%;
   }
 
-  /* line 46, ../components/sass/_layout.scss */
+  /* line 73, ../components/sass/_layout.scss */
   aside {
     *zoom: 1;
     float: left;
@@ -851,7 +903,7 @@ section:after {
     margin-right: 0%;
   }
 
-  /* line 49, ../components/sass/_layout.scss */
+  /* line 77, ../components/sass/_layout.scss */
   h1, p, article, aside {
     display: inline;
     clear: none;
@@ -868,111 +920,13 @@ section:after {
   h1:last-child, p:last-child, article:last-child, aside:last-child {
     margin-right: 0;
   }
-  /* line 51, ../components/sass/_layout.scss */
+  /* line 79, ../components/sass/_layout.scss */
   h1 p, p p, article p, aside p {
     text-align: left;
   }
-
-  /* line 57, ../components/sass/_layout.scss */
-  header {
-    text-align: center;
-    *zoom: 1;
-    overflow: hidden;
-  }
-  /* line 89, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
-  header:before, header:after {
-    content: '';
-    display: table;
-  }
-  /* line 93, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
-  header:after {
-    clear: both;
-  }
-  /* line 61, ../components/sass/_layout.scss */
-  header a {
-    *zoom: 1;
-    float: left;
-    display: inline;
-    clear: none;
-    text-align: inherit;
-    padding-left: 0;
-    padding-right: 0;
-    width: 14.16667%;
-    margin-left: 0%;
-    margin-right: 3%;
-    padding: 10px;
-    height: 54px;
-  }
-  /* line 89, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
-  header a:before, header a:after {
-    content: '';
-    display: table;
-  }
-  /* line 93, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
-  header a:after {
-    clear: both;
-  }
-  /* line 42, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_grid.scss */
-  header a:last-child {
-    margin-right: 0%;
-  }
-
-  /* line 68, ../components/sass/_layout.scss */
-  nav {
-    *zoom: 1;
-    float: left;
-    display: inline;
-    clear: none;
-    text-align: inherit;
-    padding-left: 0;
-    padding-right: 0;
-    width: 48.5%;
-    margin-left: 34.33333%;
-    margin-right: 3%;
-  }
-  /* line 89, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
-  nav:before, nav:after {
-    content: '';
-    display: table;
-  }
-  /* line 93, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
-  nav:after {
-    clear: both;
-  }
-  /* line 42, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_grid.scss */
-  nav:last-child {
-    margin-right: 0%;
-  }
-  /* line 70, ../components/sass/_layout.scss */
-  nav a {
-    *zoom: 1;
-    float: left;
-    display: inline;
-    clear: none;
-    padding-left: 0;
-    padding-right: 0;
-    text-align: inherit;
-    width: 20%;
-    margin-left: 0%;
-    margin-right: 0%;
-  }
-  /* line 89, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
-  nav a:before, nav a:after {
-    content: '';
-    display: table;
-  }
-  /* line 93, ../../../../../Library/Ruby/Gems/2.0.0/gems/jeet-0.0.4/stylesheets/jeet/_utilities.scss */
-  nav a:after {
-    clear: both;
-  }
-
-  /* line 74, ../components/sass/_layout.scss */
-  .active {
-    border-bottom: none;
-  }
 }
 @media (min-width: 960px) {
-  /* line 84, ../components/sass/_layout.scss */
+  /* line 94, ../components/sass/_layout.scss */
   section {
     -webkit-transition: all 1s ease-out;
     -moz-transition: all 1s ease-out;
@@ -980,7 +934,7 @@ section:after {
     transition: all 1s ease-out;
   }
 
-  /* line 88, ../components/sass/_layout.scss */
+  /* line 99, ../components/sass/_layout.scss */
   article p {
     *zoom: 1;
     float: left;
@@ -1007,7 +961,7 @@ section:after {
     margin-right: 0%;
   }
 
-  /* line 93, ../components/sass/_layout.scss */
+  /* line 107, ../components/sass/_layout.scss */
   aside p {
     *zoom: 1;
     float: left;
